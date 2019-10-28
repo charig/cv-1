@@ -1,6 +1,6 @@
 ---
-title: "Nick Strayer's CV"
-author: Nick Strayer
+title: "Guido Chari's CV"
+author: Guido Chari
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -48,7 +48,7 @@ Aside
 ================================================================================
 
 
-![logo](beta_dist.png){width=100%}
+![logo](pic.jpeg){width=100%}
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
@@ -63,11 +63,11 @@ Contact {#contact}
 --------------------------------------------------------------------------------
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
+- <i class="fa fa-envelope"></i> charig@gmail.com
+- <i class="fa fa-twitter"></i> GuidoChari
+- <i class="fa fa-github"></i> github.com/charig
+- <i class="fa fa-link"></i> [charig.github.io](http://nickstrayer.me/)
+- <i class="fa fa-phone"></i> (420) 723 243 551
 
 
 
@@ -108,15 +108,12 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Guido Martín Chari {#title}
 --------------------------------------------------------------------------------
 
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
-
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
-"
+intro_text <- ""
 
 cat(sanitize_links(intro_text))
 ```
@@ -168,42 +165,26 @@ print_section(position_data, 'teaching_positions')
 ```
 
 
-Selected Data Science Writing {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-
-::: aside
-I regularly blog about data science and visualization on my blog [LiveFreeOrDichotomize.](https://livefreeordichotomize.com/)
-:::
-
+[comment]: Selected Data Science Writing {data-icon=chart-line}
+[comment]: --------------------------------------------------------------------------------
 ```{r}
-print_section(position_data, 'data_science_writings')
+#print_section(position_data, 'data_science_writings')
 ```
 
-
-
-Selected Press (About)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
+[comment]:Selected Press (About)  {data-icon=newspaper}
+[comment]:--------------------------------------------------------------------------------
 ```{r}
-print_section(position_data, 'about_me_press')
+#print_section(position_data, 'about_me_press')
 ```
 
-
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
+[comment]:Selected Press (By)  {data-icon=newspaper}
+[comment]:--------------------------------------------------------------------------------
 ```{r}
-print_section(position_data, 'by_me_press')
+#print_section(position_data, 'by_me_press')
 ```
 
-
-
-
-Selected Publications, Posters, and Talks {data-icon=book}
+Publications & Posters {data-icon=book}
 --------------------------------------------------------------------------------
-
 ```{r}
 print_section(position_data, 'academic_articles')
 ```
@@ -227,5 +208,3 @@ Links {data-icon=link}
   })
 }
 ```
-
-
