@@ -59,39 +59,28 @@ if(PDF_EXPORT){
 }
 ```
 
+
+Languages {#languages}
+--------------------------------------------------------------------------------
+**Spanish**: Native
+
+**English**: Advanced
+
+**French**: Intermediate
+
+
 Contact {#contact}
 --------------------------------------------------------------------------------
 
 
 - <i class="fa fa-envelope"></i> charig@gmail.com
-- <i class="fa fa-twitter"></i> GuidoChari
-- <i class="fa fa-github"></i> github.com/charig
-- <i class="fa fa-link"></i> [charig.github.io](http://nickstrayer.me/)
+- <i class="fa fa-twitter"></i> [GuidoChari](https://twitter.com/GuidoChari)
+- <i class="fa fa-github"></i> [charig](https://github.com/charig)
+- <i class="fa fa-link"></i> [charig.github.io](http://charig.github.io)
+- <i class="fa fa-linkedin"></i> [Guido Chari](https://www.linkedin.com/in/guido-chari-87981083/)
 - <i class="fa fa-phone"></i> (420) 723 243 551
 
-
-
-Language Skills {#skills}
---------------------------------------------------------------------------------
-
-```{r}
-skills <- tribble(
-  ~skill,               ~level,
-  "R",                  5,
-  "Javascript (d3.js)", 4.5,
-  "Python",             4,
-  "Bash",               3.5,
-  "SQL",                3,
-  "C++",                3,
-  "AWK",                3
-)
-
-build_skill_bars(skills)
-```
-
-
-
-
+For more information, please contact me via email.
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
@@ -101,8 +90,6 @@ Made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
 The source code is available at [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
 
 Last updated on `r Sys.Date()`.
-
-
 
 
 Main
@@ -118,16 +105,12 @@ intro_text <- ""
 cat(sanitize_links(intro_text))
 ```
 
-
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'education')
 ```
-
-
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
@@ -136,29 +119,37 @@ Research Experience {data-icon=laptop}
 print_section(position_data, 'research_positions')
 ```
 
-
-
 Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
-
-::: aside
-I have worked in a variety of roles ranging from journalist to software engineer to data scientist. I like collaborative environments where I can learn from my peers. 
-:::
 
 ```{r}
 print_section(position_data, 'industry_positions')
 ```
 
+::: aside
+Programming languages I've mostly worked with
+
+
+```{r}
+skills <- tribble(
+  ~skill,               ~level,
+  "Smalltalk",          5,
+  "Java",               4.5,
+  "R",                  4.5,
+  "C++",                4,
+  "Javascript",         3.5,
+  "Python",             3.5,
+)
+
+build_skill_bars(skills)
+```
+:::
 <br>
 <br>
 <br>
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
-
-::: aside
-I am passionate about education. I believe that no topic is too complex if the teacher is empathetic and willing to think about new methods of approaching task. 
-:::
 
 ```{r}
 print_section(position_data, 'teaching_positions')
@@ -185,11 +176,32 @@ print_section(position_data, 'teaching_positions')
 
 Publications & Posters {data-icon=book}
 --------------------------------------------------------------------------------
+::: aside
+Program Committees
+
+DLS ’19.
+
+Co-organizer of META’19.
+
+OOPSLA ’19 Artifact Evaluation.
+
+ICOOLPS ’19.
+
+Co-organizer of META’18.
+
+ICFP ’18 Artifact Evaluation.
+:::
+
 ```{r}
 print_section(position_data, 'academic_articles')
 ```
 
+International Internships & Courses {data-icon=book}
+--------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, 'courses')
+```
 
 ```{r}
 if(PDF_EXPORT){
